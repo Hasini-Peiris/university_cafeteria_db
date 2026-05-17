@@ -139,7 +139,7 @@ university_cafeteria_db/
 
 ## API Endpoints
 
-Base URL: `http://localhost:5000/api`
+Base URL: `http://localhost:8000/api`
 
 ---
 
@@ -370,8 +370,8 @@ touch .env
 Add the following variables to the `.env` file:
 
 ```
-PORT=5000
-MONGO_URI=mongodb://localhost:27017/university_cafeteria
+PORT=8000
+MONGO_URL = "mongodb://localhost:27017/university_cafeteria_db"
 ```
 
 If using MongoDB Atlas, replace `MONGO_URI` with your Atlas connection string:
@@ -395,7 +395,7 @@ npm start
 The server runs with nodemon, which automatically restarts on any file change. Once started, the terminal should display:
 
 ```
-Server running on http://localhost:5000
+Server running on http://localhost:8000
 MongoDB connected successfully
 ```
 
@@ -413,7 +413,7 @@ npm start
 The React app launches at:
 
 ```
-http://localhost:3000
+http://localhost:5173
 ```
 
 > The frontend connects automatically to the backend at `http://localhost:5000/api` via the `REACT_APP_API_URL` environment variable.
@@ -431,7 +431,7 @@ Endpoints can be tested using any of the following tools:
 Example curl request:
 
 ```bash
-curl http://localhost:5000/api/menu
+curl http://localhost:8000/api/menu
 ```
 
 ---
