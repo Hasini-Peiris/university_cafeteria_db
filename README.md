@@ -464,7 +464,7 @@ curl http://localhost:5000/api/menu
 | Frontend Framework      | React.js v18                                 |
 | Development Approach    | Vibe Coding — Cursor IDE + AI assistance     |
 | Order Tracking Format   |   UUID   — `ORD-550e8400-e29b`               |
-| Backend Port            |   5000                                       |
+| Backend Port            |   8000                                       |
 | Frontend Port           |   5173                                       |
 
 ---
