@@ -54,7 +54,7 @@ This project delivers a **RESTful API backend** paired with a **React.js fronten
 
 Menu Browser - View all available items with live prices, categories, and availability status
 - Order Form - Select items, set a pickup time, and submit pre-orders through the UI |
-= Order Dashboard - Track, update status, and cancel orders — full CRUD via interface
+- Order Dashboard - Track, update status, and cancel orders — full CRUD via interface
 - API Integration - All UI actions connect to backend endpoints via Axios
 - Responsive UI - Clean, usable layout for both students and cafeteria staff
 - Vibe Coding - Built using Cursor IDE with AI-assisted (prompt-based) development
@@ -407,7 +407,8 @@ Open a **new terminal**, navigate to the frontend folder, and run:
 
 ```bash
 cd frontend
-npm start
+npm install
+npm run dev
 ```
 
 The React app launches at:
@@ -416,7 +417,7 @@ The React app launches at:
 http://localhost:5173
 ```
 
-> The frontend connects automatically to the backend at `http://localhost:5000/api` via the `REACT_APP_API_URL` environment variable.
+> The frontend connects automatically to the backend at `http://localhost:8000/api` via the `VITE_API_URL` environment variable.
 
 ---
 
@@ -469,6 +470,17 @@ curl http://localhost:8000/api/menu
 
 ---
 
+## Future Enhancements
+
+- JWT authentication and role-based authorization
+- QR-code based order pickup verification
+- Online payment gateway integration
+- Email notifications for order readiness
+- Admin analytics dashboard
+- Mobile application support
+
+---
+
 ## Author
 
 Hasini Peiris
@@ -477,7 +489,7 @@ Hasini Peiris
 | Module         | IT2234 — Web Services & Technology                         |
 | Assignment     | ICA-03 . 2nd Year IT . 2025                                |
 | GitHub         | https://github.com/Hasini-Peiris                           |
-| Repository     | https://github.com/Hasini-Peiris university_cafeteria_db   |
+| Repository     | https://github.com/Hasini-Peiris/university_cafeteria_db   |
 
 ---
 
